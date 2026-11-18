@@ -11,7 +11,7 @@ from scipy.stats import chi2
 # 1. 数据加载与清洗 (隔离 Uncertainty)
 # ==========================================
 print("Loading data...")
-df = pd.read_csv("/project/gcni_compute/qdeng/prompt_eng_hk/revision/code/prediction_files_separate/merge/all_models_combined_results_gpts_nih_filtered_padchest_n38_clean_updated.csv")
+df = pd.read_csv("")
 
 # --- 【功能开关：响应 Reviewer 要求，过滤低 Average 样本】 ---
 ENABLE_AVERAGE_FILTER = False  # 设置为 True 开启过滤，False 则保留全集
