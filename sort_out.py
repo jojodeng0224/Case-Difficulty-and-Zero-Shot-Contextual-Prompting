@@ -7,9 +7,9 @@ import pandas as pd
 # ==========================================
 # 1. Configuration & Paths
 # ==========================================
-difficulty_csv_path = "/project/gcni_compute/qdeng/prompt_eng_hk/revision/code/grading_files/hard_easy_nih.csv"
-results_base_dir = "/project/gcni_compute/qdeng/prompt_eng_hk/revision/medgemma27b_nih_results/27b_sort"
-output_csv_path = "merged_medgemma27b_nih_results.csv"
+difficulty_csv_path = ""
+results_base_dir = ""
+output_csv_path = ""
 
 model_name = "medgemma27b"
 dataset_name = "nih"
