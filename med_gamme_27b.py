@@ -326,7 +326,7 @@ if __name__ == "__main__":
 
     # model_id = "google/medgemma-4b-it"
     model_id = "google/medgemma-27b-it"
-    cache_dir = "/project/gcni_compute/qdeng/prompt_eng_hk"
+    cache_dir = ""
     
     model_save_name = model_id.split("/")[-1]
 
@@ -339,16 +339,16 @@ if __name__ == "__main__":
     processor = AutoProcessor.from_pretrained(model_id, cache_dir=cache_dir)
 
 
-    output_json = f"/project/gcni_compute/qdeng/prompt_eng_hk/revision/rerun_experiments/{args.dataset}_{args.cls_patho}_{args.task}_{model_save_name}.json"
+    output_json = f"//{args.dataset}_{args.cls_patho}_{args.task}_{model_save_name}.json"
     classes = ["atelectasis",  "cardiomegaly",  "consolidation",  "effusion",  "mass",  "normal",  "pneumothorax"]
     results = [] 
     
     # print(f'Image paths: {image_paths}')
     for cls in classes:
         if args.dataset == "padchest":
-            image_paths = "/project/gcni_compute/qdeng/prompt_eng_hk/padchest"
+            image_paths = ""
         else:
-            image_paths = "/project/gcni_compute/qdeng/prompt_eng_hk/NIH"
+            image_paths = ""
         
         image_paths = os.path.join(image_paths, cls)
         # image = Image.open(image_paths)
