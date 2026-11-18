@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')  # 忽略当某一类样本全为同一分数�
 # ==============================================================================
 # 1. 设置文件路径与输出 TXT 路径
 # ==============================================================================
-file_path = "/project/gcni_compute/qdeng/prompt_eng_hk/revision/code/grading_files/difficulty_scores_kc_kk_grouped_nih_filtered_padchest_n38_clean.csv"
+file_path = ""
 
 # 默认保存在同级目录下，命名为 kappa_report.txt
 output_txt_path = os.path.join(os.path.dirname(file_path), "kappa_report.txt")
